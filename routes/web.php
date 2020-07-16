@@ -20,6 +20,6 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home'); 
-Route::get('gallery', 'GalleryController@index'); 
+Route::get('gallery', 'GalleryController@index')->name('gallery.index'); 
 Route::resource('employee', 'EmployeeController')->middleware('auth'); 
 Route::resource('todo', 'TodoController')->middleware('auth'); 

@@ -112,6 +112,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: {
     employee: Object
@@ -474,7 +475,7 @@ var app = new Vue({
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\Office\Documents\Jenny\Employee\resources\js\employee.js */"./resources/js/employee.js");
+module.exports = __webpack_require__(/*! C:\Users\Office\Desktop\laravel-project\resources\js\employee.js */"./resources/js/employee.js");
 
 
 /***/ })

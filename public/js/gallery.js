@@ -3205,7 +3205,7 @@ var app = new Vue({
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\Office\Documents\Jenny\Employee\resources\js\gallery.js */"./resources/js/gallery.js");
+module.exports = __webpack_require__(/*! C:\Users\Office\Desktop\laravel-project\resources\js\gallery.js */"./resources/js/gallery.js");
 
 
 /***/ })

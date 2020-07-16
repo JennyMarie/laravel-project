@@ -37,6 +37,9 @@
                     @select="doSelectDelete"
                     ></employee-table>
                 </template>
+                <tr v-if="employees.length == 0">
+                    <td colspan="5" class="text-center">NO DATA</td>
+                </tr>
             </tbody>
         </table>
     </div>

@@ -35,20 +35,29 @@ const app = new Vue({
             })
         },
         deleteTodo(id){
-
-            let temp = {
-                id : id,
-            }
-
-            axios({
-                method: "POST",
-                url: delete_todo_route,
-                data: temp
-            }).then(resp => {
-                if(resp.data == 'success'){
-                    this.getTodos();
-                }
-            })
+            swal({
+                title: "Are you sure?",
+                icon: "warning",
+                buttons: true,
+                dangerMode: true,
+              })
+            .then((willDelete) => {
+                if (willDelete) {
+                    let temp = {
+                        id : id,
+                    }
+                    axios({
+                        method: "POST",
+                        url: delete_todo_route,
+                        data: temp
+                    }).then(resp => {
+                        if(resp.data == 'success'){
+                            swal("Successfully", "item deleted", "success");
+                            this.getTodos();
+                        }
+                    })
+                } 
+            });
             
         },
     },

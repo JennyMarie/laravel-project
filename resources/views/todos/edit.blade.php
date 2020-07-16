@@ -10,6 +10,7 @@
 @section('content')
     
     @include('components.validation_message')
+    
 
     {{ Form::open(['route' => ['todo.update', $todo->id], 'method' => 'put']) }}
         <div class="form-group">
@@ -25,7 +26,7 @@
             </label>
         </div>
 
-        <a class="btn btn-outline-dark" href="{{route('todo.index')}}" role="button">Back</a>
+        <a class="btn btn-outline-dark" href="{{route('todo.index')}}" role="button">Cancel</a>
         {{ Form::submit('Update', ['class' => 'btn btn-primary']) }}
 
     {{ Form::close() }}

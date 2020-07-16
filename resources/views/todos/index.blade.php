@@ -25,6 +25,7 @@
 @endsection
 
 @section('js')
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <script>
     var get_todo_route = "{{ route('api.get.todo') }}"
     var create_todo_route = "{{ route('api.create.todo') }}"

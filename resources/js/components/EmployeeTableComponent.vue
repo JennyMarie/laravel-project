@@ -11,6 +11,7 @@
         <td v-html="employee.position_name"></td>
         <td v-html="employee.contact"></td>
     </tr>
+    
 
     
 </template>

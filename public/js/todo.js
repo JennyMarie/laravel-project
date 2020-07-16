@@ -1141,16 +1141,27 @@ var app = new Vue({
     deleteTodo: function deleteTodo(id) {
       var _this3 = this;
 
-      var temp = {
-        id: id
-      };
-      axios({
-        method: "POST",
-        url: delete_todo_route,
-        data: temp
-      }).then(function (resp) {
-        if (resp.data == 'success') {
-          _this3.getTodos();
+      swal({
+        title: "Are you sure?",
+        icon: "warning",
+        buttons: true,
+        dangerMode: true
+      }).then(function (willDelete) {
+        if (willDelete) {
+          var temp = {
+            id: id
+          };
+          axios({
+            method: "POST",
+            url: delete_todo_route,
+            data: temp
+          }).then(function (resp) {
+            if (resp.data == 'success') {
+              swal("Successfully", "item deleted", "success");
+
+              _this3.getTodos();
+            }
+          });
         }
       });
     }
@@ -1170,7 +1181,7 @@ var app = new Vue({
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\Office\Documents\Jenny\Employee\resources\js\todo.js */"./resources/js/todo.js");
+module.exports = __webpack_require__(/*! C:\Users\Office\Desktop\laravel-project\resources\js\todo.js */"./resources/js/todo.js");
 
 
 /***/ })

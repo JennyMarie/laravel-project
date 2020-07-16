@@ -1,3 +1,14 @@
+<h4>Step to install</h4>
+<ul>
+    <li>composer install</li>
+    <li>npm install</li>
+    <li>php artisan serve</li>
+    <li>php artisan migrate</li>
+    <li>php artisan db:seed</li>
+</ul>
+
+
+
 <p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
 
 <p align="center">

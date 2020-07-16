@@ -1,0 +1,64 @@
+.todo{
+    text-align: center;
+    &-header {
+        font-size: 71px;
+        font-weight: 700;
+        color: #b0b0b0;
+    }
+
+    input {
+        border: 1px solid #d6d5d5;
+        font-size: 25px;
+        line-height: 1.4em;
+        padding: 10px 20px;
+        width: 100%;
+        color: #454545;
+        &:focus {
+            outline: 0;
+        }
+    }
+
+    ul {
+        margin-top: 20px;
+        padding: inherit;
+        border: 0 solid silver;
+        border-width: 0 0 1px 1px;
+        li {
+            padding: 13px;
+            line-height: 30px;
+            border: 0 solid silver;
+            border-width: 1px 1px 0 0;
+            font-size: 20px;
+            .item {
+                text-align: left;
+                color: #565656;
+            }
+            input { margin-top: 9px; }
+            .button {
+                background: none;
+                border: unset;
+                width: 35px;
+                font-size: 20px;
+                color: #ebebeb;
+                &:first-child {
+                    &:hover {
+                        color: #50cf4e;
+                    }
+                }
+                &:last-child {
+                    &:hover {
+                        color: #ff7474;
+                    }
+                }
+                &:focus {
+                    outline: unset;
+                }
+            } 
+            &:hover {
+                .button {
+                    color: #b9b9b9;
+                }
+            }
+        }
+    }
+}
